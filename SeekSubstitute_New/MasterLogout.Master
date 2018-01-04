@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterLogout.master.cs" Inherits="SeekSubstitute_New.MasterLogout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Coming soon, Bootstrap, Bootstrap 3.0, Free Coming Soon, free coming soon, free template, coming soon template, Html template, html template, html5, Code lab, codelab, codelab coming soon template, bootstrap coming soon template"/>
+    <title>Bootstrap Templates</title>
+    <!-- ============ Google fonts ============ -->
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet'
+        type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800'
+        rel='stylesheet' type='text/css' />
+    <!-- ============ Add custom CSS here ============ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+         <div>
+        <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Seek Substitute</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+                    <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-menubuilder">
+                <b><ul class="nav navbar-nav navbar-right">
+                    <li><a href="frmMyProfile.aspx">My Profile</a> </li>
+                    <li><a href="frmViewSchedule.aspx">View Schedule</a> </li>
+                    <li><a href="frmViewRejectedSchedule.aspx">Rejected Jobs</a> </li>
+                    <li><a href="frmCreateSchedule.aspx">Create Schedule</a> </li>
+                    <li><a href="frmLogin.aspx">LogOut</a> </li>
+                </ul></b>
+            </div>
+        </div>
+    </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.backstretch.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        'use strict';
+
+        /* ========================== */
+        /* ::::::: Backstrech ::::::: */
+        /* ========================== */
+        // You may also attach Backstretch to a block-level element
+        $.backstretch(
+        [
+            "img/44.jpg",
+            "img/colorful.jpg",
+            "img/34.jpg",
+            "img/images.jpg"
+        ],
+
+        {
+            duration: 4500,
+            fade: 1500
+        }
+    );
+    </script>
+    </form>
+</body>
+</html>
